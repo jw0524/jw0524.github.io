@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>李王府囍宴邀請函</title>
+    </head>
+
+    <style>
+        /* 通用样式 */
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 满屏容器 */
+        .fullscreen-container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden; /* 允许滚动 */
+        }
+
+        /* 背景图片 */
+        .background-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            z-index: -1;
+        }
+
+        /* 链接按钮容器 */
+        .button-container {
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* 链接按钮 */
+        .link-button {
+            background-color: transparent;
+            color: black;
+            padding: 10px 20px;
+            border: 2px solid black; /* 黑色边框 */
+            border-radius: 10px; /* 圆角边框 */
+            text-decoration: none;
+            transition: background-color 0.3s;
+            font-size: 18px;
+            margin: 20px;
+            cursor: pointer;
+        }
+
+        /* 链接按钮悬停效果 */
+        .link-button:hover {
+            background-color: #B23E25;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- 第一页 -->
+    <div class="fullscreen-container">
+        <img class="background-image" src="images/1.jpg" alt="第一页背景图">
+    </div>
+
+    <!-- 第二页 -->
+    <div class="fullscreen-container">
+        <img class="background-image" src="images/2.jpg" alt="第二页背景图">
+        
+        <!-- 链接按钮容器 -->
+        <div class="button-container">
+            <a class="link-button" href="https://www.google.com.tw/maps/place/%E7%BF%B0%E5%93%81%E9%85%92%E5%BA%97%E9%AB%98%E9%9B%84+Chateau+de+Chine+Hotel+Kaohsiung/@22.6248679,120.2834433,17z/data=!3m1!4b1!4m5!3m4!1s0x346e0470a97bfccd:0xbdf2cfcf0393771f!8m2!3d22.624863!4d120.285632?shorturl=1" target="_blank">地圖連結</a>
+            <a class="link-button" href="https://docs.google.com/forms/d/e/1FAIpQLSeWYI9EqcYiFByHl7yjjQWIgAoHRGKwaSj-NkedwACGbLSGjw/viewform" target="_blank">表單連結</a>
+        </div>
+    </div>
+</body>
+</html>
